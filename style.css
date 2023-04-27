@@ -1,0 +1,402 @@
+
+.nav-item {
+  background-color: transparent;
+  color: #aed0cb;
+  padding: 5px 15px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #000;
+  background-color: transparent;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  border-top: 4px;
+  border-bottom: 4px;
+}
+.slider {
+  width: 100%;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  transition: transform .2s;
+  margin: 0 auto;
+
+}
+
+.card-img:hover {
+  transform: scale(0.9);
+}
+
+.card {
+  position: relative;
+  width: 50%;
+}
+
+.card-img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card:hover .card-img {
+  opacity: 0.3;
+}
+
+.card:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #aed0cb;
+  color: white;
+  font-size: 14px;
+  padding: 16px 32px;
+}
+
+.title_block {
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  margin-top: 90px;
+}
+
+.row {
+  width: 100%;
+}
+
+
+.box {
+  z-index: 1;
+  position: absolute;
+  text-shadow: none;
+  border: none;
+  font-weight: 400;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+
+
+}
+
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card1 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+
+.banner-girl {
+  width: 100%;
+  height: 100%;
+  transition: transform .2s;
+  margin: 0 auto;
+
+}
+
+.banner-girl:hover {
+  transform: scale(0.9);
+}
+
+.banner-girl {
+  margin-top: 200px;
+  /* margin-bottom: 200PX; */
+}
+
+.content {
+  z-index: 1;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: none;
+  /* color: #aed0cb; */
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 20px
+}
+
+.pimg {
+  border-radius: 20px;
+  margin-top: 90px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card-img-top {
+  border-radius: none;
+  text-align: center;
+}
+/* product card css */
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+.cardi {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  background: #191919;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.cardi::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background: #aed0cb;
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+
+.cardi:hover::before {
+  top: -70%;
+  transform: skewY(390deg);
+}
+
+.cardi::after {
+  content: "CORSAIR";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 6em;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.cardi .imgBox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 1;
+}
+.cardi .contentBox {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.cardi .contentBox h3 {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cardi .contentBox .price {
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.cardi .contentBox .buy {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  padding: 10px 30px;
+  margin-top: 15px;
+  color: #000000;
+  text-decoration: none;
+  background: #aed0cb;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.cardi:hover .contentBox .buy {
+  top: 0;
+  opacity: 1;
+}
+
+.pitem {
+  height: 300px;
+  width: auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+.container{
+  max-width: 1170px;
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footer{
+  background-color: #24262b;
+    padding: 70px 0;
+    margin-top: 50px;
+    
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+  margin-left: 40px;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: gray;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #aed0cb;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #aed0cb;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+/* .bg{
+  width: 1000px;
+  height: 450px;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.3;
+} */
+.store{
+  color: #414141;
+  font-size: 19px;
+  width: auto;
+  overflow: hidden;
+  text-align: center;
+}
+.btn{
+  border-radius: 10px;
+  background-color: #aed0cb;
+  /* margin-left: 50px; */
+  display: inline;
+}
+
+.caption-contain{
+opacity: 1 ;
+/* position: relative; */
+width: 458px; 
+height: 63px; 
+top: 0px; 
+left: 0px;
+color: #000;
+font-size: 54px;
+margin-bottom: 16%;
+}
+/* .td{
+  font-size: 20px; 
+  color: gray; 
+  position: relative; 
+  width: 458px;            
+  height: 63px;                 
+  top: 0px;               
+  left: 0px;
+  margin-bottom: 50px;
+} */
